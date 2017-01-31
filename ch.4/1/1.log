@@ -1,0 +1,341 @@
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] MongoDB starting : pid=21158 port=27001 dbpath=1 64-bit host=s
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] allocator: system
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] modules: none
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] build environment:
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-01-31T14:11:16.311-0700 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { pidFilePath: "1/pid" }, replication: { oplogSizeMB: 50, replSet: "UNACCEPTABLE" }, storage: { dbPath: "1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "1/1.log" } }
+2017-01-31T14:11:16.312-0700 I -        [initandlisten] Detected data files in 1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-01-31T14:11:16.312-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-01-31T14:11:17.497-0700 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-01-31T14:11:17.498-0700 I STORAGE  [initandlisten] The size storer reports that the oplog contains 150 records totaling to 14382 bytes
+2017-01-31T14:11:17.498-0700 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-01-31T14:11:17.537-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-01-31T14:11:17.537-0700 I CONTROL  [initandlisten] 
+2017-01-31T14:11:17.537-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-01-31T14:11:17.537-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-01-31T14:11:17.537-0700 I CONTROL  [initandlisten] 
+2017-01-31T14:11:17.582-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '1/diagnostic.data'
+2017-01-31T14:11:17.583-0700 I NETWORK  [thread1] waiting for connections on port 27001
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "UNACCEPTABLE", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5890f5cab5f5f9847e1598ff') } }
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] This node is localhost:27001 in the config
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-01-31T14:11:17.584-0700 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-01-31T14:11:17.585-0700 I REPL     [rsSync] transition to RECOVERING
+2017-01-31T14:11:17.585-0700 I REPL     [rsSync] transition to SECONDARY
+2017-01-31T14:11:17.585-0700 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-01-31T14:11:17.585-0700 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-01-31T14:11:17.586-0700 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 5
+2017-01-31T14:11:17.586-0700 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-01-31T14:11:17.586-0700 I REPL     [ReplicationExecutor] Could not access any nodes within timeout when checking for additional ops to apply before finishing transition to primary. Will move forward with becoming primary anyway.
+2017-01-31T14:11:18.590-0700 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-01-31T14:13:39.229-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-01-31T14:13:39.229-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-01-31T14:13:39.229-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-01-31T14:13:39.229-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-01-31T14:13:39.229-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27001.sock
+2017-01-31T14:13:39.229-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-01-31T14:13:39.229-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-01-31T14:13:39.229-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-01-31T14:13:39.230-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-01-31T14:13:39.230-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-01-31T14:13:39.964-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-01-31T14:13:39.965-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-01-31T14:13:39.967-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-01-31T14:13:40.198-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-01-31T14:13:40.200-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-01-31T14:13:40.200-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-01-31T14:14:02.133-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] MongoDB starting : pid=21518 port=27001 dbpath=1 64-bit host=s
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] allocator: system
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] modules: none
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] build environment:
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-01-31T14:14:02.171-0700 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { pidFilePath: "1/pid" }, replication: { oplogSizeMB: 50, replSet: "UNACCEPTABLE" }, storage: { dbPath: "1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "1/1.log" } }
+2017-01-31T14:14:02.172-0700 I -        [initandlisten] Detected data files in 1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-01-31T14:14:02.172-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-01-31T14:14:03.261-0700 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-01-31T14:14:03.261-0700 I STORAGE  [initandlisten] The size storer reports that the oplog contains 165 records totaling to 15820 bytes
+2017-01-31T14:14:03.261-0700 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-01-31T14:14:03.275-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-01-31T14:14:03.275-0700 I CONTROL  [initandlisten] 
+2017-01-31T14:14:03.275-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-01-31T14:14:03.275-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-01-31T14:14:03.275-0700 I CONTROL  [initandlisten] 
+2017-01-31T14:14:03.279-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '1/diagnostic.data'
+2017-01-31T14:14:03.279-0700 I NETWORK  [thread1] waiting for connections on port 27001
+2017-01-31T14:14:03.280-0700 I REPL     [replExecDBWorker-1] New replica set config in use: { _id: "UNACCEPTABLE", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5890f5cab5f5f9847e1598ff') } }
+2017-01-31T14:14:03.280-0700 I REPL     [replExecDBWorker-1] This node is localhost:27001 in the config
+2017-01-31T14:14:03.280-0700 I REPL     [replExecDBWorker-1] transition to STARTUP2
+2017-01-31T14:14:03.280-0700 I REPL     [replExecDBWorker-1] Starting replication storage threads
+2017-01-31T14:14:03.280-0700 I REPL     [replExecDBWorker-1] Starting replication fetcher thread
+2017-01-31T14:14:03.280-0700 I REPL     [replExecDBWorker-1] Starting replication applier thread
+2017-01-31T14:14:03.281-0700 I REPL     [replExecDBWorker-1] Starting replication reporter thread
+2017-01-31T14:14:03.281-0700 I REPL     [rsSync] transition to RECOVERING
+2017-01-31T14:14:03.281-0700 I REPL     [rsSync] transition to SECONDARY
+2017-01-31T14:14:03.281-0700 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-01-31T14:14:03.281-0700 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-01-31T14:14:03.281-0700 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 6
+2017-01-31T14:14:03.281-0700 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-01-31T14:14:03.281-0700 I REPL     [ReplicationExecutor] Could not access any nodes within timeout when checking for additional ops to apply before finishing transition to primary. Will move forward with becoming primary anyway.
+2017-01-31T14:14:04.285-0700 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-01-31T14:15:19.535-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60748 #1 (1 connection now open)
+2017-01-31T14:15:19.535-0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:60748 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:16:58.976-0700 I REPL     [conn1] replSetReconfig admin command received from client
+2017-01-31T14:16:58.977-0700 I REPL     [conn1] replSetReconfig config object with 2 members parses ok
+2017-01-31T14:16:58.978-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:16:58.980-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-01-31T14:16:58.981-0700 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "UNACCEPTABLE", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5890f5cab5f5f9847e1598ff') } }
+2017-01-31T14:16:58.981-0700 I REPL     [ReplicationExecutor] This node is localhost:27001 in the config
+2017-01-31T14:16:58.981-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state STARTUP
+2017-01-31T14:16:58.982-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60769 #2 (2 connections now open)
+2017-01-31T14:16:58.982-0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:60769 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:16:58.983-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60770 #3 (3 connections now open)
+2017-01-31T14:16:58.983-0700 I -        [conn3] end connection 127.0.0.1:60770 (3 connections now open)
+2017-01-31T14:16:59.409-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60772 #4 (3 connections now open)
+2017-01-31T14:16:59.409-0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:60772 conn4: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:16:59.411-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60774 #5 (4 connections now open)
+2017-01-31T14:16:59.411-0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:60774 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:17:00.983-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state SECONDARY
+2017-01-31T14:17:00.984-0700 I -        [conn4] end connection 127.0.0.1:60772 (4 connections now open)
+2017-01-31T14:17:14.687-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60778 #6 (4 connections now open)
+2017-01-31T14:17:14.687-0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:60778 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:17:17.216-0700 I REPL     [conn1] replSetReconfig admin command received from client
+2017-01-31T14:17:17.218-0700 I REPL     [conn1] replSetReconfig config object with 3 members parses ok
+2017-01-31T14:17:17.218-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-01-31T14:17:17.218-0700 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "UNACCEPTABLE", version: 3, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5890f5cab5f5f9847e1598ff') } }
+2017-01-31T14:17:17.218-0700 I REPL     [ReplicationExecutor] This node is localhost:27001 in the config
+2017-01-31T14:17:17.219-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-01-31T14:17:17.220-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-01-31T14:17:17.220-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60783 #7 (5 connections now open)
+2017-01-31T14:17:17.220-0700 I -        [conn7] end connection 127.0.0.1:60783 (5 connections now open)
+2017-01-31T14:17:17.220-0700 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state STARTUP
+2017-01-31T14:17:17.221-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-01-31T14:17:17.222-0700 I -        [conn2] end connection 127.0.0.1:60769 (4 connections now open)
+2017-01-31T14:17:17.222-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60788 #8 (4 connections now open)
+2017-01-31T14:17:17.222-0700 I NETWORK  [conn8] received client metadata from 127.0.0.1:60788 conn8: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:17:17.223-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60790 #9 (5 connections now open)
+2017-01-31T14:17:17.223-0700 I NETWORK  [conn9] received client metadata from 127.0.0.1:60790 conn9: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:17:17.224-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60793 #10 (6 connections now open)
+2017-01-31T14:17:17.224-0700 I -        [conn10] end connection 127.0.0.1:60793 (6 connections now open)
+2017-01-31T14:17:19.225-0700 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2017-01-31T14:20:30.791-0700 I COMMAND  [conn1] Attempting to step down in response to replSetStepDown command
+2017-01-31T14:20:30.791-0700 I REPL     [conn1] transition to SECONDARY
+2017-01-31T14:20:30.791-0700 I NETWORK  [conn1] legacy transport layer closing all connections
+2017-01-31T14:20:30.791-0700 I NETWORK  [conn1] Skip closing connection for connection # 9
+2017-01-31T14:20:30.791-0700 I NETWORK  [conn1] Skip closing connection for connection # 8
+2017-01-31T14:20:30.791-0700 I NETWORK  [conn1] Skip closing connection for connection # 6
+2017-01-31T14:20:30.791-0700 I NETWORK  [conn1] Skip closing connection for connection # 5
+2017-01-31T14:20:30.792-0700 I -        [conn1] AssertionException handling request, closing client connection: 172 Operation attempted on a closed transport Session.
+2017-01-31T14:20:30.792-0700 I -        [conn1] end connection 127.0.0.1:60748 (5 connections now open)
+2017-01-31T14:20:30.793-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60835 #11 (4 connections now open)
+2017-01-31T14:20:30.794-0700 I NETWORK  [conn11] received client metadata from 127.0.0.1:60835 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:20:40.090-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60841 #12 (5 connections now open)
+2017-01-31T14:20:40.091-0700 I NETWORK  [conn12] received client metadata from 127.0.0.1:60841 conn12: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:20:41.527-0700 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state PRIMARY
+2017-01-31T14:20:42.386-0700 I REPL     [rsBackgroundSync] sync source candidate: localhost:27003
+2017-01-31T14:20:42.386-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-01-31T14:20:42.388-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-01-31T14:20:42.389-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-01-31T14:20:42.391-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-01-31T14:20:58.854-0700 I -        [conn9] end connection 127.0.0.1:60790 (6 connections now open)
+2017-01-31T14:20:58.854-0700 I -        [conn6] end connection 127.0.0.1:60778 (6 connections now open)
+2017-01-31T14:20:58.854-0700 I -        [conn5] end connection 127.0.0.1:60774 (6 connections now open)
+2017-01-31T14:21:00.547-0700 I ASIO     [ReplicationExecutor] dropping unhealthy pooled connection to localhost:27002
+2017-01-31T14:21:00.548-0700 I ASIO     [ReplicationExecutor] after drop, pool was empty, going to spawn some connections
+2017-01-31T14:21:00.548-0700 I ASIO     [ReplicationExecutor] Failed to close stream: Socket is not connected
+2017-01-31T14:21:00.548-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:00.549-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:00.549-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:00.549-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:00.551-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:00.551-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:00.551-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:00.552-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:00.552-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:02.553-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:02.555-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:02.555-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:02.555-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:02.557-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:02.557-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:02.557-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:02.558-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:02.558-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:04.559-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:04.560-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:04.561-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:04.561-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:04.562-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:04.562-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:04.562-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:04.563-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:04.564-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:06.566-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:06.568-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:06.568-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:06.568-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:06.569-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:06.569-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:06.569-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:06.570-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:06.571-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:08.573-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:08.575-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:08.575-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:08.575-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:08.577-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:08.577-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:08.577-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:08.578-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:08.578-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:10.579-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:10.580-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:10.580-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:10.581-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:10.582-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:10.582-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:10.582-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:10.583-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:10.583-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:12.584-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:12.585-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:12.586-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:12.586-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:12.587-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:12.587-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:12.587-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:12.588-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-01-31T14:21:12.588-0700 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-01-31T14:21:13.002-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-01-31T14:21:13.002-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-01-31T14:21:13.002-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-01-31T14:21:13.002-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-01-31T14:21:13.003-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27001.sock
+2017-01-31T14:21:13.003-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-01-31T14:21:13.003-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-01-31T14:21:13.003-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-01-31T14:21:13.003-0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27003: CallbackCanceled: Reporter no longer valid
+2017-01-31T14:21:13.003-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-01-31T14:21:13.003-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-01-31T14:21:13.004-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-01-31T14:21:13.004-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-01-31T14:21:13.006-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-01-31T14:21:13.242-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-01-31T14:21:13.243-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-01-31T14:21:13.243-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-01-31T14:21:13.244-0700 I CONTROL  [initandlisten] shutting down with code:0
+2017-01-31T14:21:24.376-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-01-31T14:21:24.418-0700 I CONTROL  [initandlisten] MongoDB starting : pid=22622 port=27001 dbpath=1 64-bit host=s
+2017-01-31T14:21:24.418-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-01-31T14:21:24.418-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-01-31T14:21:24.418-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-01-31T14:21:24.418-0700 I CONTROL  [initandlisten] allocator: system
+2017-01-31T14:21:24.419-0700 I CONTROL  [initandlisten] modules: none
+2017-01-31T14:21:24.419-0700 I CONTROL  [initandlisten] build environment:
+2017-01-31T14:21:24.419-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-01-31T14:21:24.419-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-01-31T14:21:24.419-0700 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { pidFilePath: "1/pid" }, replication: { oplogSizeMB: 50, replSet: "UNACCEPTABLE" }, storage: { dbPath: "1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "1/1.log" } }
+2017-01-31T14:21:24.419-0700 I -        [initandlisten] Detected data files in 1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-01-31T14:21:24.419-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-01-31T14:21:25.546-0700 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-01-31T14:21:25.546-0700 I STORAGE  [initandlisten] The size storer reports that the oplog contains 208 records totaling to 19968 bytes
+2017-01-31T14:21:25.546-0700 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-01-31T14:21:25.600-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-01-31T14:21:25.600-0700 I CONTROL  [initandlisten] 
+2017-01-31T14:21:25.600-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-01-31T14:21:25.600-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-01-31T14:21:25.600-0700 I CONTROL  [initandlisten] 
+2017-01-31T14:21:25.604-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '1/diagnostic.data'
+2017-01-31T14:21:25.604-0700 I NETWORK  [thread1] waiting for connections on port 27001
+2017-01-31T14:21:25.605-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60945 #1 (1 connection now open)
+2017-01-31T14:21:25.605-0700 I -        [conn1] end connection 127.0.0.1:60945 (1 connection now open)
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "UNACCEPTABLE", version: 3, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5890f5cab5f5f9847e1598ff') } }
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] This node is localhost:27001 in the config
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-01-31T14:21:25.606-0700 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-01-31T14:21:25.607-0700 I REPL     [rsSync] transition to RECOVERING
+2017-01-31T14:21:25.607-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:25.607-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-01-31T14:21:25.607-0700 I REPL     [rsSync] transition to SECONDARY
+2017-01-31T14:21:25.607-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60950 #2 (1 connection now open)
+2017-01-31T14:21:25.608-0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:60950 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:21:25.608-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-01-31T14:21:25.608-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state SECONDARY
+2017-01-31T14:21:25.619-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60944 #3 (2 connections now open)
+2017-01-31T14:21:25.619-0700 I -        [conn3] end connection 127.0.0.1:60944 (2 connections now open)
+2017-01-31T14:21:25.621-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-01-31T14:21:25.621-0700 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state RECOVERING
+2017-01-31T14:21:25.621-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60959 #4 (2 connections now open)
+2017-01-31T14:21:25.621-0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:60959 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:21:30.623-0700 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2017-01-31T14:21:36.125-0700 I REPL     [ReplicationExecutor] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2017-01-31T14:21:36.125-0700 I REPL     [ReplicationExecutor] conducting a dry run election to see if we could be elected
+2017-01-31T14:21:36.125-0700 I REPL     [ReplicationExecutor] VoteRequester(term 7 dry run) received a yes vote from localhost:27002; response message: { term: 7, voteGranted: true, reason: "", ok: 1.0 }
+2017-01-31T14:21:36.125-0700 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-01-31T14:21:36.126-0700 I REPL     [ReplicationExecutor] VoteRequester(term 8) received a yes vote from localhost:27002; response message: { term: 8, voteGranted: true, reason: "", ok: 1.0 }
+2017-01-31T14:21:36.126-0700 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 8
+2017-01-31T14:21:36.126-0700 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-01-31T14:21:36.127-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-01-31T14:21:36.127-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-01-31T14:21:36.127-0700 I REPL     [ReplicationExecutor] My optime is most up-to-date, skipping catch-up and completing transition to primary.
+2017-01-31T14:21:36.129-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-01-31T14:21:36.129-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-01-31T14:21:36.630-0700 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-01-31T14:21:37.637-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60973 #5 (3 connections now open)
+2017-01-31T14:21:37.637-0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:60973 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:21:37.639-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60975 #6 (4 connections now open)
+2017-01-31T14:21:37.639-0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:60975 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:21:38.989-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60976 #7 (5 connections now open)
+2017-01-31T14:21:38.990-0700 I NETWORK  [conn7] received client metadata from 127.0.0.1:60976 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:22:31.907-0700 I COMMAND  [conn7] Attempting to step down in response to replSetStepDown command
+2017-01-31T14:22:31.908-0700 I REPL     [conn7] transition to SECONDARY
+2017-01-31T14:22:31.908-0700 I NETWORK  [conn7] legacy transport layer closing all connections
+2017-01-31T14:22:31.908-0700 I NETWORK  [conn7] Skip closing connection for connection # 6
+2017-01-31T14:22:31.908-0700 I NETWORK  [conn7] Skip closing connection for connection # 5
+2017-01-31T14:22:31.908-0700 I NETWORK  [conn7] Skip closing connection for connection # 4
+2017-01-31T14:22:31.908-0700 I NETWORK  [conn7] Skip closing connection for connection # 2
+2017-01-31T14:22:31.908-0700 I -        [conn7] AssertionException handling request, closing client connection: 172 Operation attempted on a closed transport Session.
+2017-01-31T14:22:31.908-0700 I -        [conn7] end connection 127.0.0.1:60976 (5 connections now open)
+2017-01-31T14:22:41.936-0700 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I am still waiting for stepdown period to end at 2017-01-31T14:23:31.908-0700 (mask 0x20)
+2017-01-31T14:22:42.872-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60992 #8 (4 connections now open)
+2017-01-31T14:22:42.872-0700 I NETWORK  [conn8] received client metadata from 127.0.0.1:60992 conn8: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:22:43.711-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60995 #9 (5 connections now open)
+2017-01-31T14:22:43.711-0700 I NETWORK  [conn9] received client metadata from 127.0.0.1:60995 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T14:22:43.712-0700 I COMMAND  [conn9] Attempting to step down in response to replSetStepDown command
+2017-01-31T14:22:47.225-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state PRIMARY
+2017-01-31T14:22:47.823-0700 I REPL     [rsBackgroundSync] sync source candidate: localhost:27003
+2017-01-31T14:22:47.823-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-01-31T14:22:47.825-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-01-31T14:22:47.826-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-01-31T14:22:47.827-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-01-31T14:23:18.292-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-01-31T14:23:18.293-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-01-31T14:23:18.293-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-01-31T14:23:18.293-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-01-31T14:23:18.293-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27001.sock
+2017-01-31T14:23:18.293-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-01-31T14:23:18.293-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-01-31T14:23:18.293-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-01-31T14:23:18.293-0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27003: CallbackCanceled: Reporter no longer valid
+2017-01-31T14:23:18.293-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-01-31T14:23:18.293-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-01-31T14:23:18.294-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-01-31T14:23:18.294-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-01-31T14:23:18.296-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-01-31T14:23:18.535-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-01-31T14:23:18.537-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-01-31T14:23:18.537-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
