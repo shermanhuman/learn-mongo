@@ -1211,3 +1211,22 @@
 2017-01-31T14:26:37.679-0700 I REPL     [ReplicationExecutor] This node is localhost:27003 in the config
 2017-01-31T14:31:09.017-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:62266 #12 (2 connections now open)
 2017-01-31T14:31:09.018-0700 I NETWORK  [conn12] received client metadata from 127.0.0.1:62266 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-01-31T16:05:48.294-0700 I COMMAND  [conn12] killcursors: found 0 of 1
+2017-01-31T16:05:48.294-0700 I -        [conn12] end connection 127.0.0.1:62266 (2 connections now open)
+2017-01-31T16:06:07.067-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-01-31T16:06:07.067-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-01-31T16:06:07.067-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-01-31T16:06:07.067-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-01-31T16:06:07.068-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27003.sock
+2017-01-31T16:06:07.069-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-01-31T16:06:07.069-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-01-31T16:06:07.069-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-01-31T16:06:07.069-0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27002: CallbackCanceled: Reporter no longer valid
+2017-01-31T16:06:07.069-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-01-31T16:06:07.069-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-01-31T16:06:07.070-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-01-31T16:06:07.070-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-01-31T16:06:07.072-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-01-31T16:06:07.241-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-01-31T16:06:07.241-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-01-31T16:06:07.241-0700 I CONTROL  [signalProcessingThread] shutting down with code:0

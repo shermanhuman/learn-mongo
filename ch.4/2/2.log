@@ -1170,3 +1170,21 @@
 2017-01-31T14:26:37.677-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:62225 #9 (5 connections now open)
 2017-01-31T14:26:37.677-0700 I -        [conn9] end connection 127.0.0.1:62225 (5 connections now open)
 2017-01-31T14:31:03.782-0700 I -        [conn8] end connection 127.0.0.1:61596 (4 connections now open)
+2017-01-31T16:06:07.071-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-01-31T16:06:07.071-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-01-31T16:06:07.071-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-01-31T16:06:07.071-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-01-31T16:06:07.071-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27002.sock
+2017-01-31T16:06:07.071-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-01-31T16:06:07.071-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-01-31T16:06:07.071-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-01-31T16:06:07.071-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-01-31T16:06:07.071-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-01-31T16:06:07.245-0700 I -        [conn6] end connection 127.0.0.1:60978 (3 connections now open)
+2017-01-31T16:06:07.245-0700 I -        [conn4] end connection 127.0.0.1:60961 (3 connections now open)
+2017-01-31T16:06:07.305-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-01-31T16:06:07.305-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-01-31T16:06:07.309-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-01-31T16:06:07.535-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-01-31T16:06:07.535-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-01-31T16:06:07.535-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
