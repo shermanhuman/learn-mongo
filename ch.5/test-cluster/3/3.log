@@ -1,0 +1,195 @@
+2017-02-19T15:23:04.037-0700 I CONTROL  [initandlisten] MongoDB starting : pid=25993 port=27003 dbpath=3 64-bit host=s
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T15:23:04.038-0700 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { pidFilePath: "3/pid" }, replication: { oplogSizeMB: 50, replSet: "UNACCEPTABLE" }, storage: { dbPath: "3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "3/3.log" } }
+2017-02-19T15:23:04.038-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T15:23:05.116-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T15:23:05.116-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:23:05.116-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T15:23:05.116-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T15:23:05.116-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:23:05.116-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:23:05.116-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T15:23:05.485-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '3/diagnostic.data'
+2017-02-19T15:23:05.611-0700 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2017-02-19T15:23:05.612-0700 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-02-19T15:23:05.612-0700 I NETWORK  [thread1] waiting for connections on port 27003
+2017-02-19T15:26:28.066-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T15:26:28.066-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-02-19T15:26:28.066-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-02-19T15:26:28.067-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-02-19T15:26:28.067-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27003.sock
+2017-02-19T15:26:28.067-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-02-19T15:26:28.067-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-02-19T15:26:28.067-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-02-19T15:26:28.069-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-02-19T15:26:28.362-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-02-19T15:26:28.362-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-02-19T15:26:28.362-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-02-19T15:26:28.362-0700 I CONTROL  [initandlisten] shutting down with code:0
+2017-02-19T15:28:51.951-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] MongoDB starting : pid=26336 port=27003 dbpath=3 64-bit host=s
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T15:28:51.987-0700 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { pidFilePath: "3/pid" }, replication: { oplogSizeMB: 50, replSet: "UNACCEPTABLE" }, storage: { dbPath: "3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "3/3.log" } }
+2017-02-19T15:28:51.987-0700 I -        [initandlisten] Detected data files in 3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-19T15:28:51.987-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T15:28:53.546-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T15:28:53.546-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:28:53.546-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T15:28:53.546-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T15:28:53.546-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:28:53.546-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:28:53.546-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T15:28:53.547-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '3/diagnostic.data'
+2017-02-19T15:28:53.547-0700 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2017-02-19T15:28:53.547-0700 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-02-19T15:28:53.548-0700 I NETWORK  [thread1] waiting for connections on port 27003
+2017-02-19T15:52:54.518-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T15:52:54.518-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-02-19T15:52:54.518-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-02-19T15:52:54.518-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-02-19T15:52:54.518-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27003.sock
+2017-02-19T15:52:54.519-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-02-19T15:52:54.519-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-02-19T15:52:54.519-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-02-19T15:52:54.522-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-02-19T15:52:54.824-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-02-19T15:52:54.826-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-02-19T15:52:54.826-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-02-19T15:56:02.403-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] MongoDB starting : pid=27939 port=27003 dbpath=3 64-bit host=s
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T15:56:02.463-0700 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { pidFilePath: "3/pid" }, replication: { oplogSizeMB: 50, replSet: "UNACCEPTABLE" }, storage: { dbPath: "3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "3/3.log" } }
+2017-02-19T15:56:02.463-0700 I -        [initandlisten] Detected data files in 3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-19T15:56:02.463-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T15:56:03.585-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T15:56:03.585-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:56:03.585-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T15:56:03.585-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T15:56:03.585-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:56:03.585-0700 I CONTROL  [initandlisten] 
+2017-02-19T15:56:03.585-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T15:56:03.586-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '3/diagnostic.data'
+2017-02-19T15:56:03.586-0700 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2017-02-19T15:56:03.586-0700 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-02-19T15:56:03.586-0700 I NETWORK  [thread1] waiting for connections on port 27003
+2017-02-19T16:04:12.649-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52122 #1 (1 connection now open)
+2017-02-19T16:04:12.650-0700 I -        [conn1] end connection 127.0.0.1:52122 (1 connection now open)
+2017-02-19T16:04:12.651-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52126 #2 (1 connection now open)
+2017-02-19T16:04:12.652-0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:52126 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T16:04:12.652-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27001
+2017-02-19T16:04:12.655-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27001
+2017-02-19T16:04:14.658-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52135 #3 (2 connections now open)
+2017-02-19T16:04:14.658-0700 I -        [conn3] end connection 127.0.0.1:52135 (2 connections now open)
+2017-02-19T16:04:14.734-0700 I REPL     [replExecDBWorker-1] Starting replication storage threads
+2017-02-19T16:04:14.734-0700 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "UNACCEPTABLE", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58aa246c36dd3107d1c50761') } }
+2017-02-19T16:04:14.734-0700 I REPL     [ReplicationExecutor] This node is localhost:27003 in the config
+2017-02-19T16:04:14.734-0700 I REPL     [ReplicationExecutor] transition to STARTUP2
+2017-02-19T16:04:14.734-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-19T16:04:14.735-0700 I REPL     [ReplicationExecutor] Member localhost:27001 is now in state SECONDARY
+2017-02-19T16:04:14.736-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-19T16:04:14.736-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state STARTUP
+2017-02-19T16:04:14.737-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52139 #4 (2 connections now open)
+2017-02-19T16:04:14.737-0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:52139 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T16:04:14.923-0700 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-19T16:04:15.023-0700 I REPL     [initial sync-0] sync source candidate: localhost:27001
+2017-02-19T16:04:15.023-0700 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2017-02-19T16:04:15.023-0700 I REPL     [replication-0] ******
+2017-02-19T16:04:15.023-0700 I REPL     [replication-0] creating replication oplog of size: 50MB...
+2017-02-19T16:04:15.090-0700 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-19T16:04:15.090-0700 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2017-02-19T16:04:15.090-0700 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2017-02-19T16:04:15.304-0700 I REPL     [replication-0] ******
+2017-02-19T16:04:15.305-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27001
+2017-02-19T16:04:15.306-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27001
+2017-02-19T16:04:15.307-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27001
+2017-02-19T16:04:15.309-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27001
+2017-02-19T16:04:15.310-0700 I REPL     [replication-0] CollectionCloner::start called, on ns:admin.system.version
+2017-02-19T16:04:15.387-0700 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-02-19T16:04:15.387-0700 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-19T16:04:15.442-0700 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2017-02-19T16:04:15.445-0700 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-19T16:04:15.446-0700 I COMMAND  [InitialSyncInserters-admin.system.version0] setting featureCompatibilityVersion to 3.4
+2017-02-19T16:04:15.481-0700 I REPL     [repl writer worker 1] data clone finished, status: OK
+2017-02-19T16:04:15.482-0700 I REPL     [replication-0] No need to apply operations. (currently at { : Timestamp 1487545452000|1 })
+2017-02-19T16:04:15.482-0700 I REPL     [initial sync-0] Initial sync attempt finishing up.
+2017-02-19T16:04:15.482-0700 I REPL     [initial sync-0] Initial Sync Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1487545454734), initialSyncEnd: new Date(1487545455482), initialSyncElapsedMillis: 748, initialSyncAttempts: [ { durationMillis: 175, status: "OK", syncSource: "localhost:27001" } ], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp 1487545452000|1, initialSyncOplogEnd: Timestamp 1487545452000|1, databases: { databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1487545455308), end: new Date(1487545455481), elapsedMillis: 173, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 2, fetchedBatches: 1, start: new Date(1487545455310), end: new Date(1487545455481), elapsedMillis: 171 } } } }
+2017-02-19T16:04:15.482-0700 I REPL     [replication-0] Finished fetching oplog during initial sync: CallbackCanceled: Callback canceled. Last fetched optime and hash: { ts: Timestamp 1487545452000|1, t: -1 }[479574015700468298]
+2017-02-19T16:04:15.482-0700 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-19T16:04:15.482-0700 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-19T16:04:15.499-0700 I REPL     [initial sync-0] initial sync done; took 0s.
+2017-02-19T16:04:15.518-0700 I REPL     [initial sync-0] Starting replication fetcher thread
+2017-02-19T16:04:15.518-0700 I REPL     [initial sync-0] Starting replication applier thread
+2017-02-19T16:04:15.518-0700 I REPL     [initial sync-0] Starting replication reporter thread
+2017-02-19T16:04:15.518-0700 I REPL     [rsSync] transition to RECOVERING
+2017-02-19T16:04:15.518-0700 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-02-19T16:04:15.518-0700 I REPL     [rsSync] transition to SECONDARY
+2017-02-19T16:04:15.519-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state STARTUP2
+2017-02-19T16:04:20.523-0700 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state SECONDARY
+2017-02-19T16:04:24.050-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52156 #5 (3 connections now open)
+2017-02-19T16:04:24.050-0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:52156 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T16:04:25.524-0700 I REPL     [ReplicationExecutor] Member localhost:27001 is now in state PRIMARY
+2017-02-19T16:04:25.578-0700 I REPL     [rsBackgroundSync] sync source candidate: localhost:27001
+2017-02-19T16:04:25.580-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27001
+2017-02-19T16:04:25.582-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27001
+2017-02-19T16:04:56.057-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52178 #6 (4 connections now open)
+2017-02-19T16:04:56.058-0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:52178 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T16:05:18.780-0700 I -        [conn6] end connection 127.0.0.1:52178 (4 connections now open)
+2017-02-19T16:05:24.052-0700 I -        [conn2] end connection 127.0.0.1:52126 (3 connections now open)
+2017-02-19T16:06:52.487-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52220 #7 (3 connections now open)
+2017-02-19T16:06:52.487-0700 I -        [conn7] end connection 127.0.0.1:52220 (3 connections now open)
+2017-02-19T16:06:52.491-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52229 #8 (3 connections now open)
+2017-02-19T16:06:52.491-0700 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: sync source localhost:27001 (last optime: { ts: Timestamp 0|0, t: -1 }; sync source index: -1; primary index: 0) is no longer valid
+2017-02-19T16:06:52.491-0700 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-02-19T16:06:52.491-0700 I -        [conn8] end connection 127.0.0.1:52229 (3 connections now open)
+2017-02-19T16:06:52.492-0700 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "UNACCEPTABLE", version: 2, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 4, host: "localhost:27004", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58aa246c36dd3107d1c50761') } }
+2017-02-19T16:06:52.492-0700 I REPL     [ReplicationExecutor] This node is localhost:27003 in the config
+2017-02-19T16:06:52.492-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27004
+2017-02-19T16:06:52.494-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52240 #9 (3 connections now open)
+2017-02-19T16:06:52.494-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27004
+2017-02-19T16:06:52.494-0700 I REPL     [ReplicationExecutor] Member localhost:27004 is now in state STARTUP
+2017-02-19T16:06:52.494-0700 I -        [conn9] end connection 127.0.0.1:52240 (3 connections now open)
+2017-02-19T16:06:52.495-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:52244 #10 (3 connections now open)
+2017-02-19T16:06:52.495-0700 I NETWORK  [conn10] received client metadata from 127.0.0.1:52244 conn10: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T16:06:52.502-0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27001: InvalidSyncSource: Sync target is no longer valid
+2017-02-19T16:06:57.496-0700 I REPL     [ReplicationExecutor] Member localhost:27004 is now in state ARBITER
+2017-02-19T16:07:07.517-0700 I REPL     [rsBackgroundSync] sync source candidate: localhost:27001
+2017-02-19T17:51:53.720-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T17:51:53.720-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-02-19T17:51:53.720-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-02-19T17:51:53.720-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-02-19T17:51:53.720-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27003.sock
+2017-02-19T17:51:53.721-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-02-19T17:51:53.721-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-02-19T17:51:53.721-0700 I REPL     [signalProcessingThread] Waiting for shutdown of DataReplicator.
+2017-02-19T17:51:53.725-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-02-19T17:51:53.725-0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27001: CallbackCanceled: Reporter no longer valid
+2017-02-19T17:51:53.725-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-02-19T17:51:53.725-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-02-19T17:51:53.726-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-02-19T17:51:53.726-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-02-19T17:51:53.728-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-02-19T17:51:53.847-0700 I -        [conn10] end connection 127.0.0.1:52244 (3 connections now open)
+2017-02-19T17:51:53.953-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-02-19T17:51:53.955-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-02-19T17:51:53.955-0700 I CONTROL  [signalProcessingThread] shutting down with code:0

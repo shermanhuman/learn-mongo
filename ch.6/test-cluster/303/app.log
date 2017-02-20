@@ -1,0 +1,166 @@
+2017-02-19T19:23:00.437-0700 I CONTROL  [initandlisten] MongoDB starting : pid=40846 port=27303 dbpath=303 64-bit host=s
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T19:23:00.438-0700 I CONTROL  [initandlisten] options: { net: { port: 27303 }, processManagement: { pidFilePath: "303/pid" }, replication: { oplogSizeMB: 50, replSet: "3" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "303", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "303/app.log" } }
+2017-02-19T19:23:00.438-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T19:23:06.832-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T19:23:06.832-0700 I CONTROL  [initandlisten] 
+2017-02-19T19:23:06.832-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T19:23:06.832-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T19:23:06.832-0700 I CONTROL  [initandlisten] 
+2017-02-19T19:23:06.832-0700 I CONTROL  [initandlisten] 
+2017-02-19T19:23:06.832-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T19:23:06.833-0700 W SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2017-02-19T19:23:07.920-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '303/diagnostic.data'
+2017-02-19T19:23:08.522-0700 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2017-02-19T19:23:08.523-0700 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-02-19T19:23:08.523-0700 I NETWORK  [thread1] waiting for connections on port 27303
+2017-02-19T19:24:54.586-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56189 #1 (1 connection now open)
+2017-02-19T19:24:54.586-0700 I -        [conn1] end connection 127.0.0.1:56189 (1 connection now open)
+2017-02-19T19:24:54.587-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56193 #2 (1 connection now open)
+2017-02-19T19:24:54.587-0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:56193 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:24:54.588-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27301
+2017-02-19T19:24:54.589-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27301
+2017-02-19T19:24:56.592-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56202 #3 (2 connections now open)
+2017-02-19T19:24:56.592-0700 I -        [conn3] end connection 127.0.0.1:56202 (2 connections now open)
+2017-02-19T19:24:56.641-0700 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-02-19T19:24:56.641-0700 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "3", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27301", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27302", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27303", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58aa5376aec0713c8aa121b5') } }
+2017-02-19T19:24:56.641-0700 I REPL     [ReplicationExecutor] This node is localhost:27303 in the config
+2017-02-19T19:24:56.641-0700 I REPL     [ReplicationExecutor] transition to STARTUP2
+2017-02-19T19:24:56.642-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27302
+2017-02-19T19:24:56.642-0700 I REPL     [ReplicationExecutor] Member localhost:27301 is now in state SECONDARY
+2017-02-19T19:24:56.643-0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27302
+2017-02-19T19:24:56.644-0700 I REPL     [ReplicationExecutor] Member localhost:27302 is now in state STARTUP
+2017-02-19T19:24:56.645-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56206 #4 (2 connections now open)
+2017-02-19T19:24:56.645-0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:56206 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:24:56.826-0700 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-19T19:24:56.964-0700 I REPL     [initial sync-0] sync source candidate: localhost:27301
+2017-02-19T19:24:56.964-0700 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2017-02-19T19:24:56.964-0700 I REPL     [replication-0] ******
+2017-02-19T19:24:56.964-0700 I REPL     [replication-0] creating replication oplog of size: 50MB...
+2017-02-19T19:24:57.005-0700 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-19T19:24:57.005-0700 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2017-02-19T19:24:57.005-0700 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2017-02-19T19:24:57.238-0700 I REPL     [replication-0] ******
+2017-02-19T19:24:57.238-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27301
+2017-02-19T19:24:57.241-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27301
+2017-02-19T19:24:57.242-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27301
+2017-02-19T19:24:57.242-0700 I REPL     [replication-0] data clone finished, status: OK
+2017-02-19T19:24:57.243-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27301
+2017-02-19T19:24:57.244-0700 I REPL     [replication-0] No need to apply operations. (currently at { : Timestamp 1487557494000|1 })
+2017-02-19T19:24:57.244-0700 I REPL     [initial sync-0] Initial sync attempt finishing up.
+2017-02-19T19:24:57.244-0700 I REPL     [initial sync-0] Initial Sync Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1487557496641), initialSyncEnd: new Date(1487557497244), initialSyncElapsedMillis: 603, initialSyncAttempts: [ { durationMillis: 2, status: "OK", syncSource: "localhost:27301" } ], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp 1487557494000|1, initialSyncOplogEnd: Timestamp 1487557494000|1, databases: { databasesCloned: 0 } }
+2017-02-19T19:24:57.244-0700 I REPL     [replication-0] Finished fetching oplog during initial sync: CallbackCanceled: Callback canceled. Last fetched optime and hash: { ts: Timestamp 1487557494000|1, t: -1 }[6375685203318847614]
+2017-02-19T19:24:57.244-0700 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-19T19:24:57.244-0700 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-19T19:24:57.258-0700 I REPL     [initial sync-0] initial sync done; took 0s.
+2017-02-19T19:24:57.282-0700 I REPL     [initial sync-0] Starting replication fetcher thread
+2017-02-19T19:24:57.282-0700 I REPL     [initial sync-0] Starting replication applier thread
+2017-02-19T19:24:57.282-0700 I REPL     [initial sync-0] Starting replication reporter thread
+2017-02-19T19:24:57.282-0700 I REPL     [rsSync] transition to RECOVERING
+2017-02-19T19:24:57.304-0700 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-02-19T19:24:57.304-0700 I REPL     [rsSync] transition to SECONDARY
+2017-02-19T19:24:57.305-0700 I REPL     [ReplicationExecutor] Member localhost:27302 is now in state STARTUP2
+2017-02-19T19:25:02.310-0700 I REPL     [ReplicationExecutor] Member localhost:27302 is now in state SECONDARY
+2017-02-19T19:25:04.937-0700 I -        [conn2] end connection 127.0.0.1:56193 (2 connections now open)
+2017-02-19T19:25:04.987-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56272 #5 (2 connections now open)
+2017-02-19T19:25:04.987-0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:56272 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:25:04.988-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56274 #6 (3 connections now open)
+2017-02-19T19:25:04.988-0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:56274 conn6: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:25:04.989-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56278 #7 (4 connections now open)
+2017-02-19T19:25:04.989-0700 I NETWORK  [conn7] received client metadata from 127.0.0.1:56278 conn7: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:25:07.312-0700 I REPL     [ReplicationExecutor] Member localhost:27301 is now in state PRIMARY
+2017-02-19T19:25:07.326-0700 I REPL     [rsBackgroundSync] sync source candidate: localhost:27301
+2017-02-19T19:25:07.327-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27301
+2017-02-19T19:25:07.329-0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27301
+2017-02-19T19:26:04.988-0700 I -        [conn6] end connection 127.0.0.1:56274 (4 connections now open)
+2017-02-19T19:26:04.989-0700 I -        [conn5] end connection 127.0.0.1:56272 (3 connections now open)
+2017-02-19T19:36:48.751-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56606 #8 (3 connections now open)
+2017-02-19T19:36:48.752-0700 I NETWORK  [conn8] received client metadata from 127.0.0.1:56606 conn8: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:48.942-0700 I INDEX    [repl writer worker 1] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-02-19T19:36:48.942-0700 I INDEX    [repl writer worker 1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-19T19:36:48.962-0700 I INDEX    [repl writer worker 1] build index done.  scanned 0 total records. 0 secs
+2017-02-19T19:36:48.962-0700 I COMMAND  [repl writer worker 3] setting featureCompatibilityVersion to 3.4
+2017-02-19T19:36:49.012-0700 I SHARDING [repl writer worker 5] initializing sharding state with: { _id: "shardIdentity", configsvrConnectionString: "configrs/localhost:27010,localhost:27020,localhost:27030", shardName: "3", clusterId: ObjectId('58aa4f17bb42cb2ee9b9de7a') }
+2017-02-19T19:36:49.012-0700 I SHARDING [repl writer worker 5] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2017-02-19T19:36:49.022-0700 I NETWORK  [repl writer worker 5] Starting new replica set monitor for configrs/localhost:27010,localhost:27020,localhost:27030
+2017-02-19T19:36:49.022-0700 I SHARDING [thread2] creating distributed lock ping thread for process s:27303:1487558209:-3866818790494365501 (sleeping for 30000ms)
+2017-02-19T19:36:49.023-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-19T19:36:49.023-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T19:36:49.031-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-19T19:36:49.032-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T19:36:49.032-0700 I NETWORK  [shard registry reload] Starting new replica set monitor for 1/localhost:27101,localhost:27102,localhost:27103
+2017-02-19T19:36:49.032-0700 I NETWORK  [shard registry reload] Starting new replica set monitor for 2/localhost:27201,localhost:27202,localhost:27203
+2017-02-19T19:36:49.081-0700 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2017-02-19T19:36:49.105-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56652 #9 (4 connections now open)
+2017-02-19T19:36:49.105-0700 I NETWORK  [conn9] received client metadata from 127.0.0.1:56652 conn9: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:56.909-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56690 #10 (5 connections now open)
+2017-02-19T19:36:56.909-0700 I NETWORK  [conn10] received client metadata from 127.0.0.1:56690 conn10: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:56.910-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56692 #11 (6 connections now open)
+2017-02-19T19:36:56.911-0700 I NETWORK  [conn11] received client metadata from 127.0.0.1:56692 conn11: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:57.065-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56709 #12 (7 connections now open)
+2017-02-19T19:36:57.066-0700 I NETWORK  [conn12] received client metadata from 127.0.0.1:56709 conn12: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:58.771-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56733 #13 (8 connections now open)
+2017-02-19T19:36:58.771-0700 I NETWORK  [conn13] received client metadata from 127.0.0.1:56733 conn13: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:58.773-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56736 #14 (9 connections now open)
+2017-02-19T19:36:58.773-0700 I NETWORK  [conn14] received client metadata from 127.0.0.1:56736 conn14: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:58.775-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56742 #15 (10 connections now open)
+2017-02-19T19:36:58.775-0700 I NETWORK  [conn15] received client metadata from 127.0.0.1:56742 conn15: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:08.476-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56768 #16 (11 connections now open)
+2017-02-19T19:37:08.476-0700 I NETWORK  [conn16] received client metadata from 127.0.0.1:56768 conn16: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:08.477-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56771 #17 (12 connections now open)
+2017-02-19T19:37:08.479-0700 I NETWORK  [conn17] received client metadata from 127.0.0.1:56771 conn17: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:10.032-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56787 #18 (13 connections now open)
+2017-02-19T19:37:10.034-0700 I NETWORK  [conn18] received client metadata from 127.0.0.1:56787 conn18: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:10.034-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56789 #19 (14 connections now open)
+2017-02-19T19:37:10.034-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56790 #20 (15 connections now open)
+2017-02-19T19:37:10.034-0700 I NETWORK  [conn19] received client metadata from 127.0.0.1:56789 conn19: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:10.034-0700 I NETWORK  [conn20] received client metadata from 127.0.0.1:56790 conn20: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:19.035-0700 I NETWORK  [shard registry reload] Starting new replica set monitor for 3/localhost:27301,localhost:27302,localhost:27303
+2017-02-19T19:37:19.036-0700 I NETWORK  [shard registry reload] Starting new replica set monitor for 4/localhost:27401,localhost:27402,localhost:27403
+2017-02-19T19:37:19.036-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56812 #21 (16 connections now open)
+2017-02-19T19:37:19.036-0700 I NETWORK  [conn21] received client metadata from 127.0.0.1:56812 conn21: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:19.039-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56819 #22 (17 connections now open)
+2017-02-19T19:37:19.039-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:56820 #23 (18 connections now open)
+2017-02-19T19:37:19.039-0700 I NETWORK  [conn22] received client metadata from 127.0.0.1:56819 conn22: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:37:19.039-0700 I NETWORK  [conn23] received client metadata from 127.0.0.1:56820 conn23: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:42:19.051-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-19T19:42:19.053-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-19T20:15:49.268-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-19T20:15:49.271-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-19T20:53:46.588-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T20:53:46.588-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-02-19T20:53:46.588-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-02-19T20:53:46.588-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-02-19T20:53:46.588-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27303.sock
+2017-02-19T20:53:46.595-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-02-19T20:53:46.595-0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2017-02-19T20:53:46.595-0700 I REPL     [signalProcessingThread] Waiting for shutdown of DataReplicator.
+2017-02-19T20:53:46.595-0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2017-02-19T20:53:46.595-0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27301: CallbackCanceled: Reporter no longer valid
+2017-02-19T20:53:46.595-0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2017-02-19T20:53:46.595-0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2017-02-19T20:53:46.596-0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2017-02-19T20:53:46.596-0700 W SHARDING [signalProcessingThread] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2017-02-19T20:53:46.596-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-02-19T20:53:46.598-0700 W SHARDING [signalProcessingThread] error encountered while cleaning up distributed ping entry for s:27303:1487558209:-3866818790494365501 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2017-02-19T20:53:46.598-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-02-19T20:53:46.633-0700 I -        [conn9] end connection 127.0.0.1:56652 (18 connections now open)
+2017-02-19T20:53:47.944-0700 I -        [conn10] end connection 127.0.0.1:56690 (17 connections now open)
+2017-02-19T20:53:47.957-0700 I -        [conn23] end connection 127.0.0.1:56820 (16 connections now open)
+2017-02-19T20:53:47.957-0700 I -        [conn13] end connection 127.0.0.1:56733 (15 connections now open)
+2017-02-19T20:53:47.958-0700 I -        [conn4] end connection 127.0.0.1:56206 (14 connections now open)
+2017-02-19T20:53:47.978-0700 I -        [conn14] end connection 127.0.0.1:56736 (13 connections now open)
+2017-02-19T20:53:47.978-0700 I -        [conn11] end connection 127.0.0.1:56692 (12 connections now open)
+2017-02-19T20:53:47.985-0700 I -        [conn19] end connection 127.0.0.1:56789 (11 connections now open)
+2017-02-19T20:53:48.018-0700 I -        [conn12] end connection 127.0.0.1:56709 (10 connections now open)
+2017-02-19T20:53:48.025-0700 I -        [conn18] end connection 127.0.0.1:56787 (9 connections now open)
+2017-02-19T20:53:48.056-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-02-19T20:53:48.078-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-02-19T20:53:48.078-0700 I CONTROL  [signalProcessingThread] shutting down with code:0

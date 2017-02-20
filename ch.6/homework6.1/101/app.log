@@ -1,0 +1,428 @@
+2017-02-19T21:48:56.657-0700 I CONTROL  [initandlisten] MongoDB starting : pid=49137 port=27101 dbpath=101 64-bit host=s
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T21:48:56.658-0700 I CONTROL  [initandlisten] options: { net: { port: 27101 }, processManagement: { pidFilePath: "101/pid" }, replication: { oplogSizeMB: 50 }, storage: { dbPath: "101", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "101/app.log" } }
+2017-02-19T21:48:56.659-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T21:48:56.969-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T21:48:56.969-0700 I CONTROL  [initandlisten] 
+2017-02-19T21:48:56.969-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T21:48:56.969-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T21:48:56.969-0700 I CONTROL  [initandlisten] 
+2017-02-19T21:48:56.969-0700 I CONTROL  [initandlisten] 
+2017-02-19T21:48:56.969-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T21:48:57.048-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '101/diagnostic.data'
+2017-02-19T21:48:57.221-0700 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-02-19T21:48:57.221-0700 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-19T21:48:57.238-0700 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-02-19T21:48:57.239-0700 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-02-19T21:48:57.239-0700 I NETWORK  [thread1] waiting for connections on port 27101
+2017-02-19T21:51:16.111-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:59565 #1 (1 connection now open)
+2017-02-19T21:51:16.112-0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:59565 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T21:58:53.104-0700 I -        [conn1] end connection 127.0.0.1:59565 (1 connection now open)
+2017-02-19T22:00:37.343-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T22:00:37.343-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-02-19T22:00:37.343-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-02-19T22:00:37.343-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-02-19T22:00:37.343-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27101.sock
+2017-02-19T22:00:37.344-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-02-19T22:00:37.344-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-02-19T22:00:37.346-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-02-19T22:00:37.549-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-02-19T22:00:37.551-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-02-19T22:00:37.551-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-02-19T22:03:33.203-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] MongoDB starting : pid=49966 port=27101 dbpath=101 64-bit host=s
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T22:03:33.231-0700 I CONTROL  [initandlisten] options: { net: { port: 27101 }, processManagement: { pidFilePath: "101/pid" }, replication: { oplogSizeMB: 50 }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "101", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "101/app.log" } }
+2017-02-19T22:03:33.234-0700 I -        [initandlisten] Detected data files in 101 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-19T22:03:33.234-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T22:03:34.291-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T22:03:34.291-0700 I CONTROL  [initandlisten] 
+2017-02-19T22:03:34.291-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T22:03:34.291-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T22:03:34.291-0700 I CONTROL  [initandlisten] 
+2017-02-19T22:03:34.291-0700 I CONTROL  [initandlisten] 
+2017-02-19T22:03:34.291-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T22:03:34.293-0700 W SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2017-02-19T22:03:34.293-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '101/diagnostic.data'
+2017-02-19T22:03:34.294-0700 I NETWORK  [thread1] waiting for connections on port 27101
+2017-02-19T22:10:58.791-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] MongoDB starting : pid=50385 port=27101 dbpath=101 64-bit host=s
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T22:10:58.810-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T22:10:58.811-0700 I CONTROL  [initandlisten] options: { net: { port: 27101 }, processManagement: { pidFilePath: "101/pid" }, replication: { oplogSizeMB: 50 }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "101", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "101/app.log" } }
+2017-02-19T22:10:58.811-0700 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: 101/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2017-02-19T22:10:58.811-0700 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-02-19T22:10:58.811-0700 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-02-19T22:10:58.811-0700 I CONTROL  [initandlisten] now exiting
+2017-02-19T22:10:58.811-0700 I CONTROL  [initandlisten] shutting down with code:100
+2017-02-19T22:12:29.147-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] MongoDB starting : pid=50485 port=27101 dbpath=101 64-bit host=s
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] options: { net: { port: 27101 }, processManagement: { pidFilePath: "101/pid" }, replication: { oplogSizeMB: 50 }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "101", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "101/app.log" } }
+2017-02-19T22:12:29.190-0700 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: 101/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2017-02-19T22:12:29.190-0700 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-02-19T22:12:29.190-0700 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] now exiting
+2017-02-19T22:12:29.190-0700 I CONTROL  [initandlisten] shutting down with code:100
+2017-02-19T22:14:57.450-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] MongoDB starting : pid=50781 port=27101 dbpath=101 64-bit host=s
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T22:14:57.470-0700 I CONTROL  [initandlisten] options: { net: { port: 27101 }, processManagement: { pidFilePath: "101/pid" }, replication: { oplogSizeMB: 50 }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "101", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "101/app.log" } }
+2017-02-19T22:14:57.470-0700 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: 101/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2017-02-19T22:14:57.471-0700 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-02-19T22:14:57.471-0700 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-02-19T22:14:57.471-0700 I CONTROL  [initandlisten] now exiting
+2017-02-19T22:14:57.471-0700 I CONTROL  [initandlisten] shutting down with code:100
+2017-02-19T22:16:59.596-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T22:16:59.596-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-02-19T22:16:59.596-0700 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-02-19T22:16:59.597-0700 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-02-19T22:16:59.597-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27101.sock
+2017-02-19T22:16:59.597-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-02-19T22:16:59.597-0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-02-19T22:16:59.599-0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-02-19T22:16:59.795-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-02-19T22:16:59.798-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-02-19T22:16:59.798-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-02-19T22:18:18.026-0700 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] MongoDB starting : pid=50988 port=27101 dbpath=101 64-bit host=s
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] db version v3.4.1
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] allocator: system
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] modules: none
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] build environment:
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-19T22:18:18.046-0700 I CONTROL  [initandlisten] options: { net: { port: 27101 }, processManagement: { pidFilePath: "101/pid" }, replication: { oplogSizeMB: 50 }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "101", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, path: "101/app.log" } }
+2017-02-19T22:18:18.046-0700 I -        [initandlisten] Detected data files in 101 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-19T22:18:18.046-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-19T22:18:19.669-0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-19T22:18:19.670-0700 I CONTROL  [initandlisten] 
+2017-02-19T22:18:19.670-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-19T22:18:19.670-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T22:18:19.670-0700 I CONTROL  [initandlisten] 
+2017-02-19T22:18:19.670-0700 I CONTROL  [initandlisten] 
+2017-02-19T22:18:19.670-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-02-19T22:18:19.680-0700 W SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2017-02-19T22:18:19.785-0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '101/diagnostic.data'
+2017-02-19T22:18:19.785-0700 I NETWORK  [thread1] waiting for connections on port 27101
+2017-02-19T22:24:39.078-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60222 #1 (1 connection now open)
+2017-02-19T22:24:39.078-0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:60222 conn1: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:26:22.459-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60255 #2 (2 connections now open)
+2017-02-19T22:26:22.459-0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:60255 conn2: { driver: { name: "AddShard-TaskExecutor", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:26:22.462-0700 I COMMAND  [conn2] setting featureCompatibilityVersion to 3.4
+2017-02-19T22:26:22.463-0700 I SHARDING [conn2] initializing sharding state with: { _id: "shardIdentity", configsvrConnectionString: "configrs/localhost:27010,localhost:27020,localhost:27030", shardName: "shard0000", clusterId: ObjectId('58aa7c4854d286ba66bd8bce') }
+2017-02-19T22:26:22.463-0700 I SHARDING [conn2] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2017-02-19T22:26:22.472-0700 I NETWORK  [conn2] Starting new replica set monitor for configrs/localhost:27010,localhost:27020,localhost:27030
+2017-02-19T22:26:22.473-0700 I SHARDING [thread2] creating distributed lock ping thread for process s:27101:1487568382:2686561164894002353 (sleeping for 30000ms)
+2017-02-19T22:26:22.474-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T22:26:22.474-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T22:26:22.476-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T22:26:22.476-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T22:26:22.513-0700 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2017-02-19T22:26:25.644-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60265 #3 (3 connections now open)
+2017-02-19T22:26:25.645-0700 I NETWORK  [conn3] received client metadata from 127.0.0.1:60265 conn3: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:26:30.980-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60272 #4 (4 connections now open)
+2017-02-19T22:26:30.981-0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:60272 conn4: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:26:47.966-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60277 #5 (5 connections now open)
+2017-02-19T22:26:47.966-0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:60277 conn5: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:26:52.476-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-19T22:26:52.478-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-19T22:27:04.695-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60286 #6 (6 connections now open)
+2017-02-19T22:27:04.695-0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:60286 conn6: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-1", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:27:22.480-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-19T22:27:22.482-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-19T22:27:28.947-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60301 #7 (7 connections now open)
+2017-02-19T22:27:28.947-0700 I NETWORK  [conn7] received client metadata from 127.0.0.1:60301 conn7: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:31:22.474-0700 I -        [conn2] end connection 127.0.0.1:60255 (7 connections now open)
+2017-02-19T22:31:30.983-0700 I -        [conn4] end connection 127.0.0.1:60272 (6 connections now open)
+2017-02-19T22:32:04.697-0700 I -        [conn6] end connection 127.0.0.1:60286 (5 connections now open)
+2017-02-19T22:33:08.914-0700 I INDEX    [conn7] build index on: week6.trades properties: { v: 2, key: { ticker: 1.0, time: 1.0 }, name: "ticker_1_time_1", ns: "week6.trades" }
+2017-02-19T22:33:08.914-0700 I INDEX    [conn7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-19T22:33:13.163-0700 I INDEX    [conn7] build index done.  scanned 1000001 total records. 4 secs
+2017-02-19T22:33:13.163-0700 I COMMAND  [conn7] command week6.$cmd appName: "MongoDB Shell" command: createIndexes { createIndexes: "trades", indexes: [ { key: { ticker: 1.0, time: 1.0 }, name: "ticker_1_time_1" } ] } numYields:0 reslen:150 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_command 4273ms
+2017-02-19T22:34:42.648-0700 I COMMAND  [conn5] command admin.$cmd appName: "MongoDB Shell" command: checkShardingIndex { checkShardingIndex: "week6.trades", keyPattern: { ticker: 1.0, time: 1.0 } } numYields:7836 reslen:74 locks:{ Global: { acquireCount: { r: 15674 } }, Database: { acquireCount: { r: 7837 } }, Collection: { acquireCount: { r: 7837 } } } protocol:op_command 695ms
+2017-02-19T22:34:42.705-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60440 #8 (5 connections now open)
+2017-02-19T22:34:42.705-0700 I NETWORK  [conn8] received client metadata from 127.0.0.1:60440 conn8: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:34:42.711-0700 I SHARDING [conn8] request split points lookup for chunk week6.trades { : MinKey, : MinKey } -->> { : MaxKey, : MaxKey }
+2017-02-19T22:34:43.255-0700 W SHARDING [conn8] Finding the split vector for week6.trades over { ticker: 1.0, time: 1.0 } keyCount: 138654 numSplits: 7 lookedAt: 29416 took 544ms
+2017-02-19T22:34:43.255-0700 I COMMAND  [conn8] command admin.$cmd appName: "MongoDB Shell" command: splitVector { splitVector: "week6.trades", keyPattern: { ticker: 1.0, time: 1.0 }, min: { ticker: MinKey, time: MinKey }, max: { ticker: MaxKey, time: MaxKey }, maxChunkSizeBytes: 67108864, maxSplitPoints: 0, maxChunkObjects: 0 } numYields:7829 reslen:379 locks:{ Global: { acquireCount: { r: 15660 } }, Database: { acquireCount: { r: 7830 } }, Collection: { acquireCount: { r: 7830 } } } protocol:op_command 549ms
+2017-02-19T22:34:43.668-0700 I SHARDING [conn8] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:34:43.680-0700 I SHARDING [conn8] Marking collection week6.trades as sharded with collection version: 1|7||58aa7ff348e20a4890c86568, shard version: 1|7||58aa7ff348e20a4890c86568
+2017-02-19T22:34:43.680-0700 I SHARDING [conn8] MetadataLoader took 12 ms and found version 1|7||58aa7ff348e20a4890c86568
+2017-02-19T22:37:06.232-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60490 #9 (6 connections now open)
+2017-02-19T22:37:06.232-0700 I NETWORK  [conn9] received client metadata from 127.0.0.1:60490 conn9: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-1", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:39:43.684-0700 I -        [conn8] end connection 127.0.0.1:60440 (6 connections now open)
+2017-02-19T22:42:06.234-0700 I -        [conn9] end connection 127.0.0.1:60490 (5 connections now open)
+2017-02-19T22:43:36.386-0700 I SHARDING [conn3] Starting chunk migration ns: week6.trades, [{ ticker: MinKey, time: MinKey }, { ticker: "abcd", time: new Date(1330790899035) }), fromShard: shard0000, toShard: shard0001 with expected collection version 1|7||58aa7ff348e20a4890c86568
+2017-02-19T22:43:36.386-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:36.387-0700 I SHARDING [conn3] MetadataLoader took 1 ms and found version 1|7||58aa7ff348e20a4890c86568
+2017-02-19T22:43:36.388-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:36.388-0700-58aa8208041b0d81b46b4839", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569416388), what: "moveChunk.start", ns: "week6.trades", details: { min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:36.527-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27201
+2017-02-19T22:43:36.528-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27201
+2017-02-19T22:43:36.531-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60633 #10 (5 connections now open)
+2017-02-19T22:43:36.531-0700 I NETWORK  [conn10] received client metadata from 127.0.0.1:60633 conn10: { driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:43:36.532-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138654
+2017-02-19T22:43:36.535-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138654
+2017-02-19T22:43:36.539-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138654
+2017-02-19T22:43:36.550-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138654
+2017-02-19T22:43:36.570-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138654
+2017-02-19T22:43:36.607-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138654
+2017-02-19T22:43:36.672-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 115480
+2017-02-19T22:43:36.805-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 2189, clonedBytes: 531910, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71505
+2017-02-19T22:43:37.066-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 11677, clonedBytes: 2837494, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71505
+2017-02-19T22:43:37.580-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 29506, clonedBytes: 7169941, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71505
+2017-02-19T22:43:38.607-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 65881, clonedBytes: 16009066, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71505
+2017-02-19T22:43:39.635-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 95855, clonedBytes: 23292748, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4356
+2017-02-19T22:43:40.664-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 132037, clonedBytes: 32084974, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4356
+2017-02-19T22:43:41.691-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8208041b0d81b46b483a", ns: "week6.trades", from: "localhost:27101", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "steady", counts: { cloned: 138654, clonedBytes: 33692905, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 0
+2017-02-19T22:43:41.693-0700 I SHARDING [conn3] Migration successfully entered critical section
+2017-02-19T22:43:41.782-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:41.783-0700 I SHARDING [conn3] Refreshing metadata for collection week6.trades from collection version: 1|7||58aa7ff348e20a4890c86568, shard version: 1|7||58aa7ff348e20a4890c86568 to collection version: 2|1||58aa7ff348e20a4890c86568, shard version: 2|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:41.783-0700 I SHARDING [conn3] MetadataLoader took 1 ms and found version 2|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:41.783-0700 I SHARDING [conn3] Migration succeeded and updated collection version to 2|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:41.784-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:41.783-0700-58aa820d041b0d81b46b488c", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569421783), what: "moveChunk.commit", ns: "week6.trades", details: { min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:41.799-0700 I SHARDING [conn3] forking for cleanup of chunk data
+2017-02-19T22:43:41.800-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:41.800-0700-58aa820d041b0d81b46b488d", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569421800), what: "moveChunk.from", ns: "week6.trades", details: { min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, step 1 of 7: 0, step 2 of 7: 2, step 3 of 7: 143, step 4 of 7: 5160, step 5 of 7: 36, step 6 of 7: 70, step 7 of 7: 0, to: "shard0001", from: "shard0000", note: "success" } }
+2017-02-19T22:43:41.800-0700 I SHARDING [RangeDeleter] Deleter starting delete for: week6.trades from { ticker: MinKey, time: MinKey } -> { ticker: "abcd", time: new Date(1330790899035) }, with opId: 2710
+2017-02-19T22:43:41.813-0700 I COMMAND  [conn3] command admin.$cmd command: moveChunk { moveChunk: "week6.trades", shardVersion: [ Timestamp 1000|7, ObjectId('58aa7ff348e20a4890c86568') ], epoch: ObjectId('58aa7ff348e20a4890c86568'), configdb: "configrs/localhost:27010,localhost:27020,localhost:27030", fromShard: "shard0000", toShard: "shard0001", min: { ticker: MinKey, time: MinKey }, max: { ticker: "abcd", time: new Date(1330790899035) }, chunkVersion: [ Timestamp 1000|0, ObjectId('58aa7ff348e20a4890c86568') ], maxChunkSizeBytes: 67108864, waitForDelete: false, takeDistLock: false } numYields:1088 reslen:74 locks:{ Global: { acquireCount: { r: 2191, w: 7 } }, Database: { acquireCount: { r: 1092, w: 5, W: 2 } }, Collection: { acquireCount: { r: 1092, W: 5 } } } protocol:op_command 5429ms
+2017-02-19T22:43:43.105-0700 I SHARDING [conn3] Starting chunk migration ns: week6.trades, [{ ticker: "abcd", time: new Date(1330790899035) }, { ticker: "abcd", time: new Date(1330791398072) }), fromShard: shard0000, toShard: shard0001 with expected collection version 2|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:43.105-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:43.108-0700 I SHARDING [conn3] MetadataLoader took 2 ms and found version 2|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:43.108-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:43.108-0700-58aa820f041b0d81b46b4894", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569423108), what: "moveChunk.start", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:43.265-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138655
+2017-02-19T22:43:43.267-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 137130
+2017-02-19T22:43:43.273-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 132177
+2017-02-19T22:43:43.281-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 124811
+2017-02-19T22:43:43.300-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 109022
+2017-02-19T22:43:43.335-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 78693
+2017-02-19T22:43:43.400-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 1068, clonedBytes: 259524, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:43.533-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 6038, clonedBytes: 1467234, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:43.793-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 15124, clonedBytes: 3675132, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:44.307-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 34922, clonedBytes: 8486046, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:45.332-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 68005, clonedBytes: 16525215, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4357
+2017-02-19T22:43:46.361-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 105087, clonedBytes: 25536141, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4357
+2017-02-19T22:43:47.386-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa820f041b0d81b46b4895", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "steady", counts: { cloned: 138655, clonedBytes: 33693165, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 0
+2017-02-19T22:43:47.387-0700 I SHARDING [conn3] Migration successfully entered critical section
+2017-02-19T22:43:47.442-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:47.443-0700 I SHARDING [conn3] Refreshing metadata for collection week6.trades from collection version: 2|1||58aa7ff348e20a4890c86568, shard version: 2|1||58aa7ff348e20a4890c86568 to collection version: 3|1||58aa7ff348e20a4890c86568, shard version: 3|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:47.443-0700 I SHARDING [conn3] MetadataLoader took 0 ms and found version 3|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:47.443-0700 I SHARDING [conn3] Migration succeeded and updated collection version to 3|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:47.444-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:47.444-0700-58aa8213041b0d81b46b48ac", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569427444), what: "moveChunk.commit", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:47.472-0700 I SHARDING [conn3] forking for cleanup of chunk data
+2017-02-19T22:43:47.472-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:47.472-0700-58aa8213041b0d81b46b48ad", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569427472), what: "moveChunk.from", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, step 1 of 7: 0, step 2 of 7: 2, step 3 of 7: 155, step 4 of 7: 4123, step 5 of 7: 28, step 6 of 7: 56, step 7 of 7: 0, to: "shard0001", from: "shard0000", note: "success" } }
+2017-02-19T22:43:47.518-0700 I COMMAND  [conn3] command admin.$cmd command: moveChunk { moveChunk: "week6.trades", shardVersion: [ Timestamp 2000|1, ObjectId('58aa7ff348e20a4890c86568') ], epoch: ObjectId('58aa7ff348e20a4890c86568'), configdb: "configrs/localhost:27010,localhost:27020,localhost:27030", fromShard: "shard0000", toShard: "shard0001", min: { ticker: "abcd", time: new Date(1330790899035) }, max: { ticker: "abcd", time: new Date(1330791398072) }, chunkVersion: [ Timestamp 2000|1, ObjectId('58aa7ff348e20a4890c86568') ], maxChunkSizeBytes: 67108864, waitForDelete: false, takeDistLock: false } numYields:1087 reslen:74 locks:{ Global: { acquireCount: { r: 2189, w: 7 } }, Database: { acquireCount: { r: 1091, w: 5, W: 2 } }, Collection: { acquireCount: { r: 1091, W: 5 }, acquireWaitCount: { W: 5 }, timeAcquiringMicros: { W: 1556 } } } protocol:op_command 4412ms
+2017-02-19T22:43:48.650-0700 I SHARDING [conn3] Starting chunk migration ns: week6.trades, [{ ticker: "abcd", time: new Date(1330791398072) }, { ticker: "abcd", time: new Date(1330791897119) }), fromShard: shard0000, toShard: shard0001 with expected collection version 3|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:48.650-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:48.651-0700 I SHARDING [conn3] MetadataLoader took 0 ms and found version 3|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:48.651-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:48.651-0700-58aa8214041b0d81b46b48b4", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569428651), what: "moveChunk.start", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:48.794-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138655
+2017-02-19T22:43:48.796-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 136749
+2017-02-19T22:43:48.802-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 131667
+2017-02-19T22:43:48.812-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 121761
+2017-02-19T22:43:48.833-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 102320
+2017-02-19T22:43:48.868-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:48.936-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 1567, clonedBytes: 380781, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:49.068-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 6225, clonedBytes: 1512675, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:49.324-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 15685, clonedBytes: 3811455, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:49.836-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 34907, clonedBytes: 8482401, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:50.863-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 68092, clonedBytes: 16546356, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4357
+2017-02-19T22:43:51.892-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 107387, clonedBytes: 26095041, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4357
+2017-02-19T22:43:52.916-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa8214041b0d81b46b48b5", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "steady", counts: { cloned: 138655, clonedBytes: 33693165, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 0
+2017-02-19T22:43:52.916-0700 I SHARDING [conn3] Migration successfully entered critical section
+2017-02-19T22:43:52.973-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:52.973-0700 I SHARDING [conn3] Refreshing metadata for collection week6.trades from collection version: 3|1||58aa7ff348e20a4890c86568, shard version: 3|1||58aa7ff348e20a4890c86568 to collection version: 4|1||58aa7ff348e20a4890c86568, shard version: 4|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:52.973-0700 I SHARDING [conn3] MetadataLoader took 0 ms and found version 4|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:52.973-0700 I SHARDING [conn3] Migration succeeded and updated collection version to 4|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:52.974-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:52.974-0700-58aa8218041b0d81b46b48d3", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569432974), what: "moveChunk.commit", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:52.992-0700 I SHARDING [conn3] forking for cleanup of chunk data
+2017-02-19T22:43:52.993-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:52.993-0700-58aa8218041b0d81b46b48d4", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569432993), what: "moveChunk.from", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, step 1 of 7: 0, step 2 of 7: 0, step 3 of 7: 141, step 4 of 7: 4124, step 5 of 7: 30, step 6 of 7: 45, step 7 of 7: 0, to: "shard0001", from: "shard0000", note: "success" } }
+2017-02-19T22:43:53.010-0700 I COMMAND  [conn3] command admin.$cmd command: moveChunk { moveChunk: "week6.trades", shardVersion: [ Timestamp 3000|1, ObjectId('58aa7ff348e20a4890c86568') ], epoch: ObjectId('58aa7ff348e20a4890c86568'), configdb: "configrs/localhost:27010,localhost:27020,localhost:27030", fromShard: "shard0000", toShard: "shard0001", min: { ticker: "abcd", time: new Date(1330791398072) }, max: { ticker: "abcd", time: new Date(1330791897119) }, chunkVersion: [ Timestamp 3000|1, ObjectId('58aa7ff348e20a4890c86568') ], maxChunkSizeBytes: 67108864, waitForDelete: false, takeDistLock: false } numYields:1087 reslen:74 locks:{ Global: { acquireCount: { r: 2189, w: 7 } }, Database: { acquireCount: { r: 1091, w: 5, W: 2 } }, Collection: { acquireCount: { r: 1091, W: 5 }, acquireWaitCount: { W: 5 }, timeAcquiringMicros: { W: 574 } } } protocol:op_command 4360ms
+2017-02-19T22:43:54.140-0700 I SHARDING [conn3] Starting chunk migration ns: week6.trades, [{ ticker: "abcd", time: new Date(1330791897119) }, { ticker: "abcd", time: new Date(1330792396159) }), fromShard: shard0000, toShard: shard0001 with expected collection version 4|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:54.140-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:54.140-0700 I SHARDING [conn3] MetadataLoader took 0 ms and found version 4|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:54.140-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:54.140-0700-58aa821a041b0d81b46b48dd", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569434140), what: "moveChunk.start", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:54.281-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 138655
+2017-02-19T22:43:54.283-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 136749
+2017-02-19T22:43:54.289-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 131948
+2017-02-19T22:43:54.298-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 124201
+2017-02-19T22:43:54.318-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 105334
+2017-02-19T22:43:54.355-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:54.425-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 1622, clonedBytes: 394146, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:54.555-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 6725, clonedBytes: 1634175, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:54.817-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 15287, clonedBytes: 3714741, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:55.330-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 34465, clonedBytes: 8374995, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 71506
+2017-02-19T22:43:56.357-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 67690, clonedBytes: 16448670, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4357
+2017-02-19T22:43:57.384-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "clone", counts: { cloned: 105312, clonedBytes: 25590816, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 4357
+2017-02-19T22:43:58.413-0700 I SHARDING [conn3] moveChunk data transfer progress: { active: true, sessionId: "shard0000_shard0001_58aa821a041b0d81b46b48de", ns: "week6.trades", from: "localhost:27101", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, shardKeyPattern: { ticker: 1.0, time: 1.0 }, state: "steady", counts: { cloned: 138655, clonedBytes: 33693165, catchup: 0, steady: 0 }, ok: 1.0 } mem used: 0 documents remaining to clone: 0
+2017-02-19T22:43:58.414-0700 I SHARDING [conn3] Migration successfully entered critical section
+2017-02-19T22:43:58.448-0700 I SHARDING [conn3] MetadataLoader loading chunks for week6.trades based on: (empty)
+2017-02-19T22:43:58.460-0700 I SHARDING [conn3] Refreshing metadata for collection week6.trades from collection version: 4|1||58aa7ff348e20a4890c86568, shard version: 4|1||58aa7ff348e20a4890c86568 to collection version: 5|1||58aa7ff348e20a4890c86568, shard version: 5|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:58.460-0700 I SHARDING [conn3] MetadataLoader took 11 ms and found version 5|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:58.460-0700 I SHARDING [conn3] Migration succeeded and updated collection version to 5|1||58aa7ff348e20a4890c86568
+2017-02-19T22:43:58.461-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:58.461-0700-58aa821e041b0d81b46b48ef", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569438461), what: "moveChunk.commit", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, from: "shard0000", to: "shard0001" } }
+2017-02-19T22:43:58.493-0700 I SHARDING [conn3] forking for cleanup of chunk data
+2017-02-19T22:43:58.493-0700 I SHARDING [conn3] about to log metadata event into changelog: { _id: "s-2017-02-19T22:43:58.493-0700-58aa821e041b0d81b46b48f0", server: "s", clientAddr: "127.0.0.1:60265", time: new Date(1487569438493), what: "moveChunk.from", ns: "week6.trades", details: { min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, step 1 of 7: 0, step 2 of 7: 0, step 3 of 7: 138, step 4 of 7: 4134, step 5 of 7: 13, step 6 of 7: 65, step 7 of 7: 0, to: "shard0001", from: "shard0000", note: "success" } }
+2017-02-19T22:43:58.513-0700 I COMMAND  [conn3] command admin.$cmd command: moveChunk { moveChunk: "week6.trades", shardVersion: [ Timestamp 4000|1, ObjectId('58aa7ff348e20a4890c86568') ], epoch: ObjectId('58aa7ff348e20a4890c86568'), configdb: "configrs/localhost:27010,localhost:27020,localhost:27030", fromShard: "shard0000", toShard: "shard0001", min: { ticker: "abcd", time: new Date(1330791897119) }, max: { ticker: "abcd", time: new Date(1330792396159) }, chunkVersion: [ Timestamp 4000|1, ObjectId('58aa7ff348e20a4890c86568') ], maxChunkSizeBytes: 67108864, waitForDelete: false, takeDistLock: false } numYields:1088 reslen:74 locks:{ Global: { acquireCount: { r: 2191, w: 7 } }, Database: { acquireCount: { r: 1092, w: 5, W: 2 } }, Collection: { acquireCount: { r: 1092, W: 5 }, acquireWaitCount: { W: 5 }, timeAcquiringMicros: { W: 11424 } } } protocol:op_command 4373ms
+2017-02-19T22:43:59.083-0700 I SHARDING [RangeDeleter] rangeDeleter deleted 138654 documents for week6.trades from { ticker: MinKey, time: MinKey } -> { ticker: "abcd", time: new Date(1330790899035) }
+2017-02-19T22:43:59.083-0700 I SHARDING [RangeDeleter] Deleter starting delete for: week6.trades from { ticker: "abcd", time: new Date(1330790899035) } -> { ticker: "abcd", time: new Date(1330791398072) }, with opId: 2816
+2017-02-19T22:44:15.775-0700 I SHARDING [RangeDeleter] rangeDeleter deleted 138655 documents for week6.trades from { ticker: "abcd", time: new Date(1330790899035) } -> { ticker: "abcd", time: new Date(1330791398072) }
+2017-02-19T22:44:15.775-0700 I SHARDING [RangeDeleter] Deleter starting delete for: week6.trades from { ticker: "abcd", time: new Date(1330791398072) } -> { ticker: "abcd", time: new Date(1330791897119) }, with opId: 2847
+2017-02-19T22:44:19.313-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:60652 #11 (6 connections now open)
+2017-02-19T22:44:19.313-0700 I NETWORK  [conn11] received client metadata from 127.0.0.1:60652 conn11: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T22:44:29.979-0700 I SHARDING [RangeDeleter] rangeDeleter deleted 138655 documents for week6.trades from { ticker: "abcd", time: new Date(1330791398072) } -> { ticker: "abcd", time: new Date(1330791897119) }
+2017-02-19T22:44:29.979-0700 I SHARDING [RangeDeleter] Deleter starting delete for: week6.trades from { ticker: "abcd", time: new Date(1330791897119) } -> { ticker: "abcd", time: new Date(1330792396159) }, with opId: 2882
+2017-02-19T22:44:49.176-0700 I SHARDING [RangeDeleter] rangeDeleter deleted 138655 documents for week6.trades from { ticker: "abcd", time: new Date(1330791897119) } -> { ticker: "abcd", time: new Date(1330792396159) }
+2017-02-19T22:49:19.316-0700 I -        [conn11] end connection 127.0.0.1:60652 (6 connections now open)
+2017-02-19T22:55:52.632-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-19T22:55:52.635-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-19T23:59:53.359-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-19T23:59:53.360-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T00:02:05.166-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:62129 #12 (6 connections now open)
+2017-02-20T00:02:05.166-0700 I NETWORK  [conn12] received client metadata from 127.0.0.1:62129 conn12: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T00:03:45.217-0700 I -        [conn12] end connection 127.0.0.1:62129 (6 connections now open)
+2017-02-20T00:07:23.445-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T00:07:23.447-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T00:35:23.756-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T00:35:23.760-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T01:36:24.472-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T01:36:24.474-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T01:47:54.581-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T01:47:54.583-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T02:00:54.728-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T02:00:54.730-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T02:15:54.902-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T02:15:54.908-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T02:38:55.184-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T02:38:55.187-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T03:14:20.132-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:49239 #13 (6 connections now open)
+2017-02-20T03:14:20.133-0700 I NETWORK  [conn13] received client metadata from 127.0.0.1:49239 conn13: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T03:15:20.139-0700 I -        [conn3] end connection 127.0.0.1:60265 (6 connections now open)
+2017-02-20T03:26:25.746-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T03:26:25.748-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T03:29:11.265-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:49495 #14 (6 connections now open)
+2017-02-20T03:29:11.266-0700 I NETWORK  [conn14] received client metadata from 127.0.0.1:49495 conn14: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T03:30:11.274-0700 I -        [conn13] end connection 127.0.0.1:49239 (6 connections now open)
+2017-02-20T03:47:25.970-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T03:47:25.972-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T04:30:56.413-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T04:30:56.415-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T04:35:56.473-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T04:35:56.475-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T04:43:56.567-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T04:43:56.568-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T04:51:26.654-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T04:51:26.656-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T05:12:26.926-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T05:12:26.929-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T05:27:57.083-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T05:27:57.086-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T05:47:27.306-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T05:47:27.309-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T06:09:57.582-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T06:09:57.584-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T06:16:57.658-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T06:16:57.660-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T06:32:57.838-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T06:32:57.840-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T07:16:28.291-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T07:16:28.293-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T07:39:28.568-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T07:39:28.570-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T07:54:58.757-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T07:54:58.759-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T08:18:59.010-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T08:18:59.012-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T08:26:59.059-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T08:26:59.061-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T08:53:05.403-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:55535 #15 (6 connections now open)
+2017-02-20T08:53:05.403-0700 I NETWORK  [conn15] received client metadata from 127.0.0.1:55535 conn15: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T08:53:24.040-0700 I NETWORK  [replSetDistLockPinger] Marking host localhost:27010 as failed :: caused by :: NotMaster: not master
+2017-02-20T08:53:24.040-0700 I NETWORK  [replSetDistLockPinger] Socket closed remotely, no longer connected (idle 1135 secs, remote host 127.0.0.1:27010)
+2017-02-20T08:53:24.042-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T08:53:24.043-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T08:53:24.067-0700 W SHARDING [replSetDistLockPinger] Lock pinger for proc: s:27101:1487568382:2686561164894002353 was inactive for 1137892ms ms
+2017-02-20T08:53:26.965-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T08:53:26.966-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T08:58:02.025-0700 I -        [conn14] end connection 127.0.0.1:49495 (6 connections now open)
+2017-02-20T09:22:57.746-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-20T09:22:57.750-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-20T09:50:27.858-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T09:50:27.860-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T10:01:45.268-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:57699 #16 (6 connections now open)
+2017-02-20T10:01:45.268-0700 I NETWORK  [conn16] received client metadata from 127.0.0.1:57699 conn16: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T10:02:45.271-0700 I -        [conn15] end connection 127.0.0.1:55535 (6 connections now open)
+2017-02-20T10:10:27.956-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T10:10:27.958-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T10:28:28.333-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-20T10:28:28.335-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-20T10:37:43.156-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:58268 #17 (6 connections now open)
+2017-02-20T10:37:43.156-0700 I NETWORK  [conn17] received client metadata from 127.0.0.1:58268 conn17: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T10:38:07.514-0700 I NETWORK  [replSetDistLockPinger] Marking host localhost:27020 as failed :: caused by :: NotMaster: not master
+2017-02-20T10:38:07.515-0700 I NETWORK  [replSetDistLockPinger] Socket closed remotely, no longer connected (idle 26 secs, remote host 127.0.0.1:27020)
+2017-02-20T10:38:07.517-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-20T10:38:07.519-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-20T10:38:07.542-0700 W SHARDING [replSetDistLockPinger] Lock pinger for proc: s:27101:1487568382:2686561164894002353 was inactive for 492539ms ms
+2017-02-20T10:38:12.117-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T10:38:12.119-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T10:38:39.347-0700 I -        [conn16] end connection 127.0.0.1:57699 (6 connections now open)
+2017-02-20T10:43:12.141-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T10:43:12.143-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T10:57:34.268-0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:59011 #18 (6 connections now open)
+2017-02-20T10:57:34.268-0700 I NETWORK  [conn18] received client metadata from 127.0.0.1:59011 conn18: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-20T10:58:34.271-0700 I -        [conn17] end connection 127.0.0.1:58268 (6 connections now open)
+2017-02-20T11:12:42.836-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T11:12:42.838-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T11:35:42.960-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T11:35:42.965-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T12:46:15.489-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T12:46:15.493-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T13:01:15.941-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T13:01:15.943-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T13:04:45.963-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T13:04:45.965-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T13:15:16.677-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T13:15:16.680-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T13:27:47.377-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T13:27:47.379-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T14:03:49.031-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T14:03:49.033-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-20T14:07:49.502-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-20T14:07:49.503-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-20T14:21:20.004-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-20T14:21:20.007-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020

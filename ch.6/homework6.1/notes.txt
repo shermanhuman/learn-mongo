@@ -1,0 +1,25 @@
+Set up the config servers first, start them then initiate the replica set:
+
+rs.initiate({ _id:"configrs", configsvr:true, members: [ { _id: 10, host:"localhost:27010" } , { _id: 20, host:"localhost:27020" } , { _id: 30, host:"localhost:27030" } ] })
+
+Next set up each of the shard replica sets:
+
+mongo --port 27101 --eval 'rs.initiate({ _id:"1", members: [ { _id: 1, host:"localhost:27101" } , { _id: 2, host:"localhost:27102" } , { _id: 3, host:"localhost:27103" } ] })'
+mongo --port 27201 --eval 'rs.initiate({ _id:"2", members: [ { _id: 1, host:"localhost:27201" } , { _id: 2, host:"localhost:27202" } , { _id: 3, host:"localhost:27203" } ] })'
+mongo --port 27301 --eval 'rs.initiate({ _id:"3", members: [ { _id: 1, host:"localhost:27301" } , { _id: 2, host:"localhost:27302" } , { _id: 3, host:"localhost:27303" } ] })'
+mongo --port 27401 --eval 'rs.initiate({ _id:"4", members: [ { _id: 1, host:"localhost:27401" } , { _id: 2, host:"localhost:27402" } , { _id: 3, host:"localhost:27403" } ] })'
+
+Start the mongos and add the shards:
+
+sh.addShard("1/localhost:27101")
+sh.addShard("2/localhost:27201")
+sh.addShard("3/localhost:27301")
+sh.addShard("4/localhost:27401")
+
+
+Handy snips:
+
+show number of chunks per shard
+mongos> db.chunks.aggregate([ { $match: {ns: "week6.trades"}}, { $group: { _id: "$shard", n:{$sum:1}}}])
+
+

@@ -1,0 +1,69 @@
+2017-02-19T19:27:48.843-0700 I CONTROL  [main] 
+2017-02-19T19:27:48.843-0700 I CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2017-02-19T19:27:48.843-0700 I CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2017-02-19T19:27:48.843-0700 I CONTROL  [main] 
+2017-02-19T19:27:48.844-0700 I SHARDING [mongosMain] mongos version v3.4.1
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] allocator: system
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] modules: none
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] build environment:
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain]     distarch: x86_64
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain]     target_arch: x86_64
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] db version v3.4.1
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] git version: 5e103c4f5583e2566a45d740225dc250baacfbd7
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] OpenSSL version: OpenSSL 1.0.2k  26 Jan 2017
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] allocator: system
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] modules: none
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] build environment:
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain]     distarch: x86_64
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain]     target_arch: x86_64
+2017-02-19T19:27:48.844-0700 I CONTROL  [mongosMain] options: { net: { port: 27001 }, processManagement: { pidFilePath: "001/pid" }, sharding: { configDB: "configrs/localhost:27010,localhost:27020,localhost:27030" }, systemLog: { destination: "file", logAppend: true, path: "001/app.log" } }
+2017-02-19T19:27:48.853-0700 I NETWORK  [mongosMain] Starting new replica set monitor for configrs/localhost:27010,localhost:27020,localhost:27030
+2017-02-19T19:27:48.853-0700 I SHARDING [thread1] creating distributed lock ping thread for process s:27001:1487557668:7081212083199568818 (sleeping for 30000ms)
+2017-02-19T19:27:48.854-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T19:27:48.854-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27030
+2017-02-19T19:27:48.854-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T19:27:48.856-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T19:27:48.856-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27030
+2017-02-19T19:27:48.856-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T19:27:48.875-0700 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2017-02-19T19:27:50.860-0700 I NETWORK  [thread2] waiting for connections on port 27001
+2017-02-19T19:27:51.028-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27020
+2017-02-19T19:27:51.030-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27020
+2017-02-19T19:28:09.617-0700 I NETWORK  [thread2] connection accepted from 127.0.0.1:56370 #1 (1 connection now open)
+2017-02-19T19:28:09.618-0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:56370 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:29:36.893-0700 I -        [conn1] end connection 127.0.0.1:56370 (1 connection now open)
+2017-02-19T19:36:17.022-0700 I NETWORK  [thread2] connection accepted from 127.0.0.1:56520 #2 (1 connection now open)
+2017-02-19T19:36:17.022-0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:56520 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:36:28.986-0700 I NETWORK  [conn2] Starting new replica set monitor for 1/localhost:27101,localhost:27102,localhost:27103
+2017-02-19T19:36:40.118-0700 I NETWORK  [conn2] Starting new replica set monitor for 2/localhost:27201,localhost:27202,localhost:27203
+2017-02-19T19:36:49.102-0700 I NETWORK  [conn2] Starting new replica set monitor for 3/localhost:27301,localhost:27302,localhost:27303
+2017-02-19T19:36:57.010-0700 I NETWORK  [conn2] Starting new replica set monitor for 4/localhost:27401,localhost:27402,localhost:27403
+2017-02-19T19:38:21.242-0700 I SHARDING [conn2] distributed lock 'fortune' acquired for 'enableSharding', ts : 58aa569de72058c848589c13
+2017-02-19T19:38:21.244-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27101
+2017-02-19T19:38:21.245-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27101
+2017-02-19T19:38:21.246-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27201
+2017-02-19T19:38:21.247-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27201
+2017-02-19T19:38:21.248-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27301
+2017-02-19T19:38:21.249-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27301
+2017-02-19T19:38:21.249-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27401
+2017-02-19T19:38:21.250-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27401
+2017-02-19T19:38:21.250-0700 I SHARDING [conn2] Placing [fortune] on: 1
+2017-02-19T19:38:21.250-0700 I SHARDING [conn2] Enabling sharding for database [fortune] in config db
+2017-02-19T19:38:21.474-0700 I SHARDING [conn2] distributed lock with ts: 58aa569de72058c848589c13' unlocked.
+2017-02-19T19:39:22.745-0700 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to localhost:27101
+2017-02-19T19:39:22.747-0700 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to localhost:27101
+2017-02-19T19:48:36.986-0700 I -        [conn2] end connection 127.0.0.1:56520 (1 connection now open)
+2017-02-19T19:56:26.096-0700 I NETWORK  [thread2] connection accepted from 127.0.0.1:57290 #3 (1 connection now open)
+2017-02-19T19:56:26.096-0700 I NETWORK  [conn3] received client metadata from 127.0.0.1:57290 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-02-19T19:56:38.592-0700 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Connecting to localhost:27010
+2017-02-19T19:56:38.595-0700 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-1-0] Successfully connected to localhost:27010
+2017-02-19T20:04:50.959-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T20:04:50.961-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T20:34:22.833-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:27010
+2017-02-19T20:34:22.836-0700 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:27010
+2017-02-19T20:53:38.664-0700 I -        [conn3] end connection 127.0.0.1:57290 (1 connection now open)
+2017-02-19T20:53:46.621-0700 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2017-02-19T20:53:46.621-0700 W SHARDING [signalProcessingThread] error encountered while cleaning up distributed ping entry for s:27001:1487557668:7081212083199568818 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2017-02-19T20:53:46.621-0700 I CONTROL  [signalProcessingThread] shutting down with code:0
